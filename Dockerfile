@@ -7,7 +7,7 @@ EXPOSE map[5900/tcp:{}]
 EXPOSE 51820
 
 # Expose Ports of RouterOS
-EXPOSE map[1194/tcp:{1194} 1701/tcp:{1701} 1723/tcp:{1723} 1812/udp:{1812} 1813/udp:{1813} 2021/tcp:{2021} 2022/tcp:{2022} 2023/tcp:{2023} 2027/tcp:{2027} 21/tcp:{2121} 22/tcp:{22222} 23/tcp:{2323} 443/tcp:{7443} 4500/udp:{4500} 50/tcp:{50} 500/udp:{500} 51/tcp:{51} 5900/tcp:{5900} 80/tcp:{80} 8080/tcp:{8080} 8291/tcp:{8291} 8728/tcp:{8728} 8729/tcp:{8729} 8900/tcp:{8900}]
+EXPOSE 1194/tcp 1701/tcp 1723/tcp 1812/udp 1813/udp 2021/tcp 2022/tcp 2023/tcp 2027/tcp 21/tcp 22/tcp 23/tcp 443/tcp 4500/udp 50/tcp 500/udp 51/tcp 5900/tcp 80/tcp 8080/tcp 8291/tcp 8728/tcp 8729/tcp 8900/tcp
 
 # Change work dir (it will also create this folder if is not exist)
 WORKDIR /routeros
