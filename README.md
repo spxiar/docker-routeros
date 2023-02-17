@@ -1,10 +1,5 @@
 # Mikrotik RouterOS in Docker
 
-This extrasmall image was created for tests purpose only, for example on
-this project based unit testing of [routeros-api-php](https://github.com/EvilFreelancer/routeros-api-php) library.
-If you need fully functional "RouterOS in Docker" for production usage
-look at [VR Network Lab](https://github.com/plajjan/vrnetlab) project.
-
 ## How to use
 
 ### Create your own `Dockerfile`
@@ -13,7 +8,7 @@ List of all available tags is [here](https://hub.docker.com/r/evilfreelancer/doc
 `latest` will be used by default.
 
 ```dockerfile
-FROM evilfreelancer/docker-routeros
+FROM spxiar/docker-routeros
 ADD ["your-scripts.sh", "/"]
 RUN /your-scripts.sh
 ```
@@ -85,8 +80,3 @@ Now you can connect to your RouterOS container via VNC protocol
 | OpenVPN     | 1194/tcp, 1194/udp |
 | L2TP        | 1701 |
 | PPTP        | 1723 |
-
-## Links
-
-* https://github.com/joshkunz/qemu-docker
-* https://github.com/ennweb/docker-kvm
